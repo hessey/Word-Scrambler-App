@@ -43,13 +43,18 @@ class ViewController2: UIViewController {
         }
     }
     
-    var animalCategory = Animals(category: "Animals", animals: [["t","a","p","i","r"], ["m","o","n","k","e","y"], ["l","e","m","u","r"], ["f","r","o","g"], ["b","a","t"], ["b","e","a","r"], ["d","e","e","r"], ["s","q","u","i","r","r","e","l"],  ["h","a","m","s","t","e","r"],  ["s","l","o","t","h"]]
-    )
+    var animalCategory = Animals(category: "Animals", animals: [["t","a","p","i","r"], ["m","o","n","k","e","y"], ["l","e","m","u","r"], ["f","r","o","g"], ["b","a","t"], ["b","e","a","r"], ["d","e","e","r"], ["s","q","u","i","r","r","e","l"],  ["h","a","m","s","t","e","r"],  ["s","l","o","t","h"]])
     
+    class FruitsAndVeggies: Categories {
+        let fruitsAndVeggies: [[String]]
+        
+        init(category: String, fruitsAndVeggies: [[String]] {
+            self.fruitsAndVeggies = fruitsAndVeggies
+            super.init(category: category)
+        }
+    }
     
-    
-    
-    
+    var fruitsCategory = FruitsAndVeggies(category: "Fruits and Vegetables", fruitsAndVeggies: [["a","p","p","l","e"], ["l","e","t","t","u","c","e"], ["p","e","a","r"], ["p","e","a","s"], ["c","o","r","n"], ["m","e","l","o","n"], ["c","a","r","r","o","t"], ["a","p","r","i","c","o","t"], ["a","v","o","c","a","d","o"],["b","a","n","a","n","a"]])
     
     
     
